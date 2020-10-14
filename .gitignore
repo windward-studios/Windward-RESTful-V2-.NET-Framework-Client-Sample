@@ -4,7 +4,6 @@
 
 **/bin/
 **/.vs/
-
 /obj/Debug
 /obj/project.nuget.cache
 /obj/RunReport.csproj.nuget.dgspec.json
