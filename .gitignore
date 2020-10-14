@@ -1,13 +1,14 @@
-﻿################################################################################
+################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.Net Standard 2.0/samples/RunReport/.vs
-/.Net Standard 2.0/samples/RunReport/obj
+**/bin/
+**/.vs/
 
-**/.idea/workspace.xml
-**/target/
+/obj/Debug
+/obj/project.nuget.cache
+/obj/RunReport.csproj.nuget.dgspec.json
+/obj/RunReport.csproj.nuget.g.props
+/obj/RunReport.csproj.nuget.g.targets
 
-**/obj/
-
-**/vs/
+/files/output.docx

@@ -1,0 +1,1 @@
+msbuild RunReport.sln & bin\Debug\net472\RunReport.exe files\Manufacturing.docx files\output.docx -xml:MANF_DATA_2009 files\Manufacturing.xml & pause
