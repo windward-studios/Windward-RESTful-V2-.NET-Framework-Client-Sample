@@ -2,13 +2,17 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.7.2": {
-      "log4net/2.0.8": {
+      "log4net/2.0.14": {
         "type": "package",
+        "frameworkAssemblies": [
+          "System.Configuration",
+          "System.Web"
+        ],
         "compile": {
-          "lib/net45-full/log4net.dll": {}
+          "lib/net45/log4net.dll": {}
         },
         "runtime": {
-          "lib/net45-full/log4net.dll": {}
+          "lib/net45/log4net.dll": {}
         }
       },
       "Newtonsoft.Json/12.0.3": {
@@ -104,28 +108,49 @@
           }
         }
       },
-      "WindwardRestApi/2.0.0.33": {
+      "WindwardRestApi/22.2.0.6": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
-          "log4net": "2.0.8"
+          "log4net": "2.0.14"
         },
         "compile": {
           "lib/netstandard2.0/WindwardRestApi.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/WindwardRestApi.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/netstandard2.0/obj/Debug/netstandard2.0/WindwardRestApi.csproj.FileListAbsolute.txt": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/obj/WindwardRestApi.csproj.nuget.dgspec.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/obj/project.assets.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
         }
       }
     },
     ".NETFramework,Version=v4.7.2/win7-x86": {
-      "log4net/2.0.8": {
+      "log4net/2.0.14": {
         "type": "package",
+        "frameworkAssemblies": [
+          "System.Configuration",
+          "System.Web"
+        ],
         "compile": {
-          "lib/net45-full/log4net.dll": {}
+          "lib/net45/log4net.dll": {}
         },
         "runtime": {
-          "lib/net45-full/log4net.dll": {}
+          "lib/net45/log4net.dll": {}
         }
       },
       "Newtonsoft.Json/12.0.3": {
@@ -209,44 +234,65 @@
           "runtimes/win/lib/net461/System.Security.Principal.Windows.dll": {}
         }
       },
-      "WindwardRestApi/2.0.0.33": {
+      "WindwardRestApi/22.2.0.6": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
-          "log4net": "2.0.8"
+          "log4net": "2.0.14"
         },
         "compile": {
           "lib/netstandard2.0/WindwardRestApi.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/WindwardRestApi.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/netstandard2.0/obj/Debug/netstandard2.0/WindwardRestApi.csproj.FileListAbsolute.txt": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/obj/WindwardRestApi.csproj.nuget.dgspec.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/obj/project.assets.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
         }
       }
     }
   },
   "libraries": {
-    "log4net/2.0.8": {
-      "sha512": "N41MQGHZImiCfn0cUuSBjZxrcNfIQCuCgQP0rpgB3J/NWponEh3lc1LxJEuIsPAR9Oc1jVvfkNNFCY1C5hf9LA==",
+    "log4net/2.0.14": {
+      "sha512": "KevyXUuhOyhx7l1jWwq6ZGVlRC2Aetg0qDp6rJpfSZGcDPKQDwfOE6yEuVkVf0kEP08NQqBDn/TQ/TJv4wgyhw==",
       "type": "package",
-      "path": "log4net/2.0.8",
+      "path": "log4net/2.0.14",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net20-full/log4net.dll",
-        "lib/net20-full/log4net.xml",
+        "lib/net20/log4net.dll",
+        "lib/net20/log4net.xml",
         "lib/net35-client/log4net.dll",
         "lib/net35-client/log4net.xml",
-        "lib/net35-full/log4net.dll",
-        "lib/net35-full/log4net.xml",
+        "lib/net35/log4net.dll",
+        "lib/net35/log4net.xml",
         "lib/net40-client/log4net.dll",
         "lib/net40-client/log4net.xml",
-        "lib/net40-full/log4net.dll",
-        "lib/net40-full/log4net.xml",
-        "lib/net45-full/log4net.dll",
-        "lib/net45-full/log4net.xml",
+        "lib/net40/log4net.dll",
+        "lib/net40/log4net.xml",
+        "lib/net45/log4net.dll",
+        "lib/net45/log4net.xml",
         "lib/netstandard1.3/log4net.dll",
-        "log4net.2.0.8.nupkg.sha512",
-        "log4net.nuspec"
+        "lib/netstandard1.3/log4net.xml",
+        "lib/netstandard2.0/log4net.dll",
+        "lib/netstandard2.0/log4net.xml",
+        "log4net.2.0.14.nupkg.sha512",
+        "log4net.nuspec",
+        "package-icon.png"
       ]
     },
     "Newtonsoft.Json/12.0.3": {
@@ -430,16 +476,22 @@
         "version.txt"
       ]
     },
-    "WindwardRestApi/2.0.0.33": {
-      "sha512": "c1RyJXDaRIqrO16lcTLT3TRanbdbomC/4pb0yw3fGXrBPIqOlKO/Xvt7BTZexXSgio4xJZgcYrWntkx6rnoL7A==",
+    "WindwardRestApi/22.2.0.6": {
+      "sha512": "qTu3eEONmUiSnfmTew2JANQ+Wq7LBxs86pBjIVEsiN/UZ2SVHdZ5VwQanWX4aRbqpaWacm93S4Wytbuvx6AVxw==",
       "type": "package",
-      "path": "windwardrestapi/2.0.0.33",
+      "path": "windwardrestapi/22.2.0.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "content/obj/Debug/netstandard2.0/WindwardRestApi.csproj.FileListAbsolute.txt",
+        "content/obj/WindwardRestApi.csproj.nuget.dgspec.json",
+        "content/obj/project.assets.json",
+        "contentFiles/any/netstandard2.0/obj/Debug/netstandard2.0/WindwardRestApi.csproj.FileListAbsolute.txt",
+        "contentFiles/any/netstandard2.0/obj/WindwardRestApi.csproj.nuget.dgspec.json",
+        "contentFiles/any/netstandard2.0/obj/project.assets.json",
         "lib/netstandard2.0/WindwardRestApi.dll",
         "lib/netstandard2.0/WindwardRestApi.xml",
-        "windwardrestapi.2.0.0.33.nupkg.sha512",
+        "windwardrestapi.22.2.0.6.nupkg.sha512",
         "windwardrestapi.nuspec"
       ]
     }
@@ -447,25 +499,29 @@
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
       "System.Configuration.ConfigurationManager >= 4.7.0",
-      "WindwardRestApi >= 2.*",
-      "log4net >= 2.0.8"
+      "WindwardRestApi >= 22.2.0.6"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ZaidAbu-Hijleh\\.nuget\\packages\\": {}
+    "C:\\Users\\zaida\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "2.0.0",
     "restore": {
-      "projectUniqueName": "C:\\WindwardRESTClientSamples\\Windward-RESTful-V2-.NET-Framework-Client-Sample\\RunReport.csproj",
+      "projectUniqueName": "C:\\Windward-RESTful-V2-.NET-Framework-Client-Sample\\RunReport.csproj",
       "projectName": "RunReport",
-      "projectPath": "C:\\WindwardRESTClientSamples\\Windward-RESTful-V2-.NET-Framework-Client-Sample\\RunReport.csproj",
-      "packagesPath": "C:\\Users\\ZaidAbu-Hijleh\\.nuget\\packages\\",
-      "outputPath": "C:\\WindwardRESTClientSamples\\Windward-RESTful-V2-.NET-Framework-Client-Sample\\obj\\",
+      "projectPath": "C:\\Windward-RESTful-V2-.NET-Framework-Client-Sample\\RunReport.csproj",
+      "packagesPath": "C:\\Users\\zaida\\.nuget\\packages\\",
+      "outputPath": "C:\\Windward-RESTful-V2-.NET-Framework-Client-Sample\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
+      "fallbackFolders": [
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ZaidAbu-Hijleh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\zaida\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -477,6 +533,7 @@
       },
       "frameworks": {
         "net472": {
+          "targetAlias": "net472",
           "projectReferences": {}
         }
       },
@@ -488,6 +545,7 @@
     },
     "frameworks": {
       "net472": {
+        "targetAlias": "net472",
         "dependencies": {
           "System.Configuration.ConfigurationManager": {
             "target": "Package",
@@ -495,14 +553,10 @@
           },
           "WindwardRestApi": {
             "target": "Package",
-            "version": "[2.*, )"
-          },
-          "log4net": {
-            "target": "Package",
-            "version": "[2.0.8, )"
+            "version": "[22.2.0.6, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
